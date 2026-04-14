@@ -8,15 +8,17 @@ interface Translations {
 
 const translations: Translations = {
   // Navigation
-  "nav.home": { he: "בית", en: "Home" },
-  "nav.create": { he: "יצירה", en: "Create" },
+  "nav.home": { he: "לוח בקרה", en: "Dashboard" },
+  "nav.create": { he: "סטודיו יצירה", en: "Creation Studio" },
   "nav.dashboard": { he: "האזור שלי", en: "My Area" },
   "nav.support": { he: "תמיכה", en: "Support" },
   "nav.journal": { he: "יומן", en: "Journal" },
+  "nav.analytics": { he: "ניתוח עסקי", en: "Business Analytics" },
+  "nav.pricing": { he: "תמחור חכם", en: "Smart Pricing" },
 
   // Home
-  "home.hero.title1": { he: "ה-AI שיוצר לעסק שלך", en: "AI That Creates For Your Business" },
-  "home.hero.title2": { he: "הכול במקום אחד", en: "Everything In One Place" },
+  "home.hero.title1": { he: "BizAlra AI: Your Ultimate Business Partner", en: "BizAlra AI: Your Ultimate Business Partner" },
+  "home.hero.title2": { he: "הצטרפו לסטודיו AI המתקדם ביותר לעסקים", en: "Join the Most Advanced AI Studio for Businesses" },
   "home.hero.desc": { he: "יצירת תמונות מוצר, תוכן שיווקי, ניתוח עסקי ועוד — בתוך כמה שניות בלבד בעזרת AI.", en: "Create product photos, marketing content, business analytics and more — in just seconds with AI." },
   "home.slide1.title": { he: "תוכן שיווקי חכם", en: "Smart Marketing Content" },
   "home.slide1.desc": { he: "צרו הודעות שיווקיות מקצועיות, תמונות מוצר ותוכן לרשתות — הכול אוטומטי עם AI.", en: "Create professional marketing messages, product photos and social content — all automated with AI." },
@@ -24,7 +26,15 @@ const translations: Translations = {
   "home.slide2.desc": { he: "העלו תמונה פשוטה והמערכת תיצור תמונה שיווקית מקצועית מוכנה לפרסום.", en: "Upload a simple photo and the system creates a professional marketing image ready to publish." },
   "home.slide3.title": { he: "ניתוח עסקי ותמחור חכם", en: "Business Analytics & Smart Pricing" },
   "home.slide3.desc": { he: "קבלו תובנות עסקיות, חישוב תמחור מדויק וניהול זמן חכם — הכול במקום אחד.", en: "Get business insights, accurate pricing calculations and smart time management — all in one place." },
-  "home.cta.start": { he: "התחל ליצור", en: "Start Creating" },
+  "home.cta.start": { he: "בואו נתחיל", en: "Let's Get Started" },
+
+  // Onboarding
+  "onboarding.step1.title": { he: "מה סוג העסק שלך?", en: "What is your business type?" },
+  "onboarding.step2.title": { he: "למי העסק פונה?", en: "Who is your target market?" },
+  "onboarding.step3.title": { he: "מה המטרה שלך כרגע?", en: "What is your current objective?" },
+  "onboarding.success.title": { he: "נהדר, הבנו!", en: "Great, we got it!" },
+  "onboarding.success.desc": { he: "נתאים לך תוכן שיווקי ומקצועי במיוחד עבורך", en: "We'll tailor marketing and professional content especially for you" },
+  "onboarding.next": { he: "להמשיך לשלב הבא", en: "Continue to next step" },
   "home.cta.auth": { he: "התחברות / הרשמה", en: "Login / Sign Up" },
   "home.tools.title": { he: "הכלים שלך", en: "Your Tools" },
 
@@ -429,14 +439,17 @@ const translations: Translations = {
   "pricing.footer": { he: "תשלום חד-פעמי לחודש · ללא חיוב אוטומטי · ביטול בכל עת", en: "One-time monthly payment · No auto-charge · Cancel anytime" },
 
   // Auth
-  "auth.welcomeBack": { he: "ברוכים השבים!", en: "Welcome Back!" },
+  "auth.welcomeBack": { he: "הכל במקום אחד - צרו חשבון והתחילו עכשיו", en: "Everything In One Place - Create an Account & Start Now" },
   "auth.joinStudio": { he: "הצטרפו לסטודיו AI המתקדם", en: "Join the Advanced AI Studio" },
   "auth.fullName": { he: "שם מלא", en: "Full Name" },
   "auth.namePlaceholder": { he: "השם שלך", en: "Your name" },
   "auth.emailLabel": { he: "אימייל", en: "Email" },
   "auth.passwordLabel": { he: "סיסמה", en: "Password" },
-  "auth.login": { he: "התחבר", en: "Login" },
+  "auth.agreeTerms": { he: "אני מסכים לתנאי השימוש", en: "I agree to the terms of use" },
+  "auth.login": { he: "התחברות", en: "Login" },
   "auth.createAccount": { he: "צור חשבון", en: "Create Account" },
+  "auth.continueGoogle": { he: "המשך עם גוגל", en: "Continue with Google" },
+  "auth.continueGuest": { he: "המשך כאורח", en: "Continue as Guest" },
   "auth.noAccount": { he: "אין לי חשבון — הרשמה", en: "No account — Sign Up" },
   "auth.hasAccount": { he: "יש לי כבר חשבון — התחברות", en: "Already have an account — Login" },
   "auth.forgotPassword": { he: "שכחתי סיסמה", en: "Forgot Password" },

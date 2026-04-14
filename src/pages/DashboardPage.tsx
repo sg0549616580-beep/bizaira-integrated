@@ -107,9 +107,9 @@ const DashboardPage = () => {
   };
 
   const quickActions = [
-    { to: "/create",   icon: Wand2,          label: t("dash.startCreate")   },
-    { to: "/pricing",  icon: CreditCard,      label: t("dash.manageSub")     },
-    { to: "/support",  icon: HeadphonesIcon,  label: t("dash.supportTitle")  },
+    { to: "/create?type=product", icon: Camera, label: "תמונת מוצר" },
+    { to: "/create?type=logo", icon: PenTool, label: "עיצוב לוגו" },
+    { to: "/create?type=post", icon: MessageSquare, label: "פוסט לסטורי" },
   ];
 
   const typeLabel = (type: CreationType) => {
@@ -132,20 +132,21 @@ const DashboardPage = () => {
         <div className="mb-16 animate-fade-in">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <p className="luxury-caption mb-2 text-luxury-gray-500">
-                {isHe ? "שלום," : "Welcome back,"}
+              <p className="text-secondary mb-2">
+                {isHe ? "היי," : "Hi,"}
               </p>
-              <h1 className="luxury-heading-1 text-luxury-black">
+              <h1 className="text-3xl font-bold text-primary">
                 {userName}
               </h1>
-              <p className="luxury-body mt-3 text-luxury-gray-600 max-w-md">
-                {isHe ? "הנה סקירה של הפעילות והיצירות שלך" : "Here's an overview of your activity and creations"}
+              <p className="text-secondary mt-3">
+                {isHe ? "ברוכה השבה לסטודיו שלך" : "Welcome back to your studio"}
               </p>
             </div>
-            <div className="hidden md:block">
-              <div className="w-24 h-24 luxury-glass rounded-2xl flex items-center justify-center">
-                <Sparkles size={32} className="text-luxury-navy" />
-              </div>
+            <div className="text-right">
+              <p className="text-secondary text-sm">{t("dash.plan")}: Free Plan</p>
+              <button className="bg-accent-blue text-white px-4 py-2 rounded-lg text-sm hover:bg-accent-teal transition-colors">
+                {t("dash.upgrade")}
+              </button>
             </div>
           </div>
         </div>

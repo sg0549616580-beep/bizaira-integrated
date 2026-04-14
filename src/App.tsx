@@ -19,6 +19,7 @@ import TimeOptimizerPage from "./pages/TimeOptimizerPage";
 import PricingStrategistPage from "./pages/PricingStrategistPage";
 import ImageStudioPage from "./pages/ImageStudioPage";
 import AuthPage from "./pages/AuthPage";
+import OnboardingPage from "./pages/OnboardingPage";
 import AccountVerificationPage from "./pages/AccountVerificationPage";
 import DashboardPage from "./pages/DashboardPage";
 import PricingPage from "./pages/PricingPage";
